@@ -16,26 +16,27 @@
 
 #### Trello Board for Project Tracking: 
 
+https://trello.com/b/CiLCPjMJ/project-4-sei
 
 #### Sample Wire Frames: 
 
-some text: 
+here's a basic login page. if the user hasn't logged in before they can create an account: 
 
 ![Image-1](https://i.imgur.com/LYYdxF6.png)
 
-some more text: 
+on this page the user can select from various categories of activies. whichever category is selected will render and specific activies will be shown. the user can select activities to add to an activity list rendered on the right of the screen: 
 
 ![Image-2](https://i.imgur.com/QBcv3fa.png)
 
-image 3 text: 
+in this screen several activities from different categories have been selected. the user can choose to schedule the activies (they can also remove activities, or add more): 
 
 ![Image-3](https://i.imgur.com/WnlLJhH.png)
 
-image 4 text: 
+the user has a 'bespoke' category to choose from. in this option, they can add their own activities. since these activities are user generated they have the ability not only to delete the activity, but also to edit the actitity: 
 
 ![Image-4](https://i.imgur.com/fcf4UIc.png)
 
-image 5 text: 
+this view shows activities from mulitiple categories selected. the user can delete (and with bespoke activities they may edit). when they are ready they can schedule the activities: 
 
 ![Image-5](https://i.imgur.com/uXYUyuG.png)
 
