@@ -21,25 +21,25 @@
 
 some text: 
 
-![Image-1] (https://i.imgur.com/LYYdxF6.png)
+![Image-1](https://i.imgur.com/LYYdxF6.png)
 
 some more text: 
 
-![Image-2] (https://i.imgur.com/QBcv3fa.png)
+![Image-2](https://i.imgur.com/QBcv3fa.png)
 
 image 3 text: 
 
-![Image-3] (https://i.imgur.com/WnlLJhH.png)
+![Image-3](https://i.imgur.com/WnlLJhH.png)
 
 image 4 text: 
 
-![Image-4] (https://i.imgur.com/fcf4UIc.png)
+![Image-4](https://i.imgur.com/fcf4UIc.png)
 
 image 5 text: 
 
-![Image-5] (https://i.imgur.com/uXYUyuG.png)
+![Image-5](https://i.imgur.com/uXYUyuG.png)
 
 
 #### ERD: 
 
-![ERD] (https://i.imgur.com/QLSVEPh.png)
+![ERD](https://i.imgur.com/QLSVEPh.png)
