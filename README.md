@@ -43,4 +43,4 @@ this view shows activities from mulitiple categories selected. the user can dele
 
 #### ERD: 
 
-![ERD](https://i.imgur.com/QLSVEPh.png)
+![ERD](https://i.imgur.com/a0Ywdyd.png)
