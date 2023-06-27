@@ -36,7 +36,7 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
                   className="btn-sm"
                   onClick={handleCheckout}
                   disabled={!lineActivities.length}
-                >CHECKOUT</button>
+                >book alPal</button>
               }
               <span>{order.totalQty}</span>
               <span className="right">{order.orderTotal.toFixed(2)} mins total </span>
