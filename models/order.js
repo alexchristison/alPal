@@ -74,8 +74,8 @@ orderSchema.methods.setActivityQty = function(activityId, newQty) {
     // Find the line activity in the cart for the menu activity
     const lineActivity = cart.lineActivities.find(lineActivity => lineActivity.activity._id.equals(activityId));
     if (lineActivity && newQty <= 0) {
-      // Calling deleteOne, removes the lineActivity from the cart.lineActivities array
-      lineActivity.deleteOne();
+      // Calling remove, removes itself from the cart.lineActivities array
+      lineActivity.remove();
     } else if (lineActivity) {
       // Set the new qty - positive value is assured thanks to prev if
       lineActivity.qty = newQty;
