@@ -1,4 +1,4 @@
-// import './MenuList.css';
+import './MenuList.css';
 import MenuListActivity from '../MenuListActivity/MenuListActivity';
 
 export default function MenuList({ menuActivities }) {
