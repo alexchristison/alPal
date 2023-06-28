@@ -6,8 +6,14 @@ module.exports = {
     addToCart,
     setActivityQtyInCart,
     checkout,
-    orderHistory
+    getAllForUser
   };
+
+  // new function to retreive the order history for a user
+  async function getAllForUser(req, res) {
+    const orders = await Order.find({user: req.user._id, isPaid: true}).sort('-updatedAt');
+    res.json(orders);
+  }
   
   // A cart is the unpaid order for a user
   async function cart(req, res) {
@@ -37,9 +43,5 @@ module.exports = {
     res.json(cart);
   }
 
-// new function to retreive the order history for a user
-async function orderHistory(req, res) {
-  const orderHistory = await Order.find({ user: req.user._id, isPaid: true });
-  res.json(orderHistory);
-}
+
 

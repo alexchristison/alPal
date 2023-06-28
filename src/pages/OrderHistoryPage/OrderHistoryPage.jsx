@@ -1,36 +1,41 @@
-import React, { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import './OrderHistoryPage.css';
+import * as ordersAPI from '../../utilities/orders-api';
+import Logo from '../../components/Logo/Logo';
+import UserLogOut from '../../components/UserLogOut/UserLogOut';
+import OrderDetail from '../../components/OrderDetail/OrderDetail';
+import OrderList from '../../components/OrderList/OrderList';
 
-export default function OrderHistoryPage() {
-  const [orderHistory, setOrderHistory] = useState([]);
 
-  useEffect(() => {
-    fetch('/api/orders/history', {
-      headers: {
-        'Authorization': 'Bearer ' + localStorage.getItem('token') // Modify this based on your authentication setup
-      }
-    })
-      .then((response) => {
-        if (response.ok) {
-          return response.json();
-        } else if (response.status === 401) {
-          window.location.href = '/login'; // Redirect to login page if the user is not authenticated
-        } else {
-          throw new Error('Error: ' + response.status);
-        }
-      })
-      .then((data) => setOrderHistory(data))
-      .catch((error) => console.error(error));
+export default function OrderHistoryPage({ user, setUser }) {
+  const [orders, setOrders] = useState([]);
+  const [activeOrder, setActiveOrder] = useState(null);
+
+  useEffect(function() {
+    async function getOrders() {
+      const orders = await ordersAPI.getAllForUser();
+      setActiveOrder(orders[0] || null);
+      setOrders(orders);
+    }
+    getOrders();
   }, []);
 
   return (
-    <>
-      <h1>Order History</h1>
-      {orderHistory.map((order) => (
-        <div key={order._id}>
-          <h2>Order ID: {order._id}</h2>
-          {/* Render other order details here */}
-        </div>
-      ))}
-    </>
+    <main className="OrderHistoryPage">
+      <aside>
+        <Logo />
+        <Link to="/orders/new" className="button btn-sm">NEW ORDER</Link>
+        <UserLogOut user={user} setUser={setUser} />
+      </aside>
+      {/* Render an OrderList component (needs to be coded) */}
+      <OrderList
+        orders={orders}
+        activeOrder={activeOrder}
+        setActiveOrder={setActiveOrder}
+      />
+      {/* Render the existing OrderDetail component */}
+      <OrderDetail order={activeOrder} />
+    </main>    
   );
 }
