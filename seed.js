@@ -12,6 +12,7 @@ const Activity = require('./models/activity');
     {name: 'Exercise', sortOrder: 30},
     {name: 'Excursions', sortOrder: 40},
     {name: 'Random', sortOrder: 50},
+    {name: 'Music', sortOrder: 60},
   ]);
 
   await Activity.deleteMany({});
@@ -28,6 +29,8 @@ const Activity = require('./models/activity');
     {name: 'Existential discussion', description: 'what does it all mean?', category: categories[4], duration: 90},
     {name: 'Existential discussion 2', description: 'if you kids want to blow your mind I will try to explain the Terminator timeline regarding John Connor and his father', category: categories[4], duration: 240},
     {name: 'Watch Every Which Way But Loose together', description: 'the Clint Eastwood vehicle with the orangutan', category: categories[4], duration: 114},
+    {name: 'Listen to Black Sunday by Cypress Hill', description: 'discuss this great 1993 album', category: categories[5], duration: 60},
+    {name: 'Listen to random assortment of songs by Three Dog Night', description: 'discuss our surprise at not knowing that song was by Three Dog Night', category: categories[5], duration: 60},
   ]);
 
   console.log(activities)
