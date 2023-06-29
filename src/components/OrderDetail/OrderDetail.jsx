@@ -43,7 +43,7 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
             </section>
           </>
           :
-          <div className="bored">Bored?</div>
+          <div className="bored">Bored AF?</div>
         }
       </div>
     </div>
