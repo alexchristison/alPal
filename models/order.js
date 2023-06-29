@@ -18,6 +18,7 @@ const orderSchema = new Schema({
     ref: 'User',
     required: true
   },
+  // orderName: { type: string },
   lineActivities: [lineActivitySchema],
   isPaid: { type: Boolean, default: false } 
 }, {

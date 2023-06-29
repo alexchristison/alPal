@@ -39,6 +39,7 @@ module.exports = {
   async function checkout(req, res) {
     const cart = await Order.getCart(req.user._id);
     cart.isPaid = true;
+    // cart.orderName = req.body.orderName;
     await cart.save();
     res.json(cart);
   }

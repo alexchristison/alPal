@@ -18,7 +18,8 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
     <div className="OrderDetail">
       <div className="section-heading">
         {order.isPaid ?
-          <span>ORDER <span className="smaller">{order.orderId}</span></span>
+          // <span>ORDER <span className="smaller">{order.orderName}</span></span>
+          <span className="right">{order.orderTotal.toFixed(0)} mins total </span>
           :
           <span>NEW ORDER</span>
         }
@@ -43,7 +44,7 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
             </section>
           </>
           :
-          <div className="bored">Bored AF?</div>
+          <div className="bored">Bored as all get out?</div>
         }
       </div>
     </div>

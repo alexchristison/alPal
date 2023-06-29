@@ -7,6 +7,7 @@ export default function OrderListActivity({ order, activeOrder, setActiveOrder }
       onClick={() => setActiveOrder(order)}
     >
       <div>
+        {/* <div>Order Name: <span className="smaller">{order.orderName}</span></div>  */}
         <div>Order Id: <span className="smaller">{order.orderId}</span></div>
         <div className="smaller">{new Date(order.updatedAt).toLocaleDateString()}</div>
       </div>
