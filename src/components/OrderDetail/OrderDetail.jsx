@@ -20,7 +20,7 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
         {order.isPaid ?
           <span>ORDER <span className="smaller">{order.orderId}</span></span>
           :
-          <span>NEW ORDER</span>
+          <span>New Activity List with alPal</span>
         }
         <span>{new Date(order.updatedAt).toLocaleDateString()}</span>
       </div>
@@ -39,7 +39,7 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
                 >book alPal</button>
               }
               <span>{order.totalQty}</span>
-              <span className="right">{order.orderTotal.toFixed(2)} mins total </span>
+              <span className="right">Total {order.orderTotal.toFixed()} mins </span>
             </section>
           </>
           :

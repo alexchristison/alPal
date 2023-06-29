@@ -24,7 +24,7 @@ export default function LineActivity({ lineActivity, isPaid, handleChangeQty }) 
           >+</button>
         }
       </div>
-      <div className="ext-duration">{lineActivity.extDuration.toFixed(2)} mins </div>
+      <div className="ext-duration">{lineActivity.extDuration.toFixed(0)} mins </div>
     </div>
   );
 }

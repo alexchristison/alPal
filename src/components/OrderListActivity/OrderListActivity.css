@@ -18,12 +18,12 @@
   }
 
   .OrderListActivity.selected {
-    border-color: var(--orange);
+    border-color: var(--green);
     border-width: .2vmin;
     cursor: default;
   }
 
   .OrderListActivity:not(.selected):hover {
-    border-color: var(--orange);
+    border-color: var(--green);
     border-width: .2vmin;
   }
