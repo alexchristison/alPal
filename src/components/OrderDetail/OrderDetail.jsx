@@ -39,7 +39,7 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
                 >book alPal</button>
               }
               <span>{order.totalQty}</span>
-              <span className="right">{order.orderTotal.toFixed(2)} mins total </span>
+              <span className="right">Total {order.orderTotal.toFixed()} mins </span>
             </section>
           </>
           :
