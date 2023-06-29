@@ -84,4 +84,4 @@ orderSchema.methods.setActivityQty = function(activityId, newQty) {
     return cart.save();
   };
 
-module.exports = mongoose.model('Order', orderSchema);
+  module.exports = mongoose.model('Order', orderSchema);
