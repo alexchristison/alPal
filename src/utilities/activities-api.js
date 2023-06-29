@@ -1,5 +1,6 @@
 import sendRequest from "./send-request";
-const BASE_URL = '/api/activities';
+// const BASE_URL = '/api/activities
+const BASE_URL = 'https://alpal-api.onrender.com/api/activities';
 
 export async function getAll() {
     return sendRequest(BASE_URL);
