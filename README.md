@@ -1,46 +1,33 @@
-# alPal
+# 1. Intro to alPal
+### The purpose of the webapp alPal is to allow users to schedule activities with their pal, Alex 
 
-### The purpose of the webapp alPal is to allow users to schedule activities with their pal, Alex
+# 2. Screenshots of alPal: 
 
-#### USER STORIES:
-##### As a user I want ...
-- to be able to create an account if I don't already have one
-- to be able to login to the app if I've already created an account
-- to view activities from different categories
-- to be able to add activities from different categories to a list
-- to be able to create activities that are not listed
-- to be able to update activities that I have created
-- to be able to delete activites that I have created
-- to be able to view all activities I've added in a list
-- to be able to schedule my activities with Alex
+![Image-1](https://i.imgur.com/B4jqE2A.png)
 
-#### Trello Board for Project Tracking: 
+![Image-2](https://i.imgur.com/xCP1crl.png)
 
-https://trello.com/b/CiLCPjMJ/project-4-sei
+![Image-3](https://i.imgur.com/YI8dWSO.png)
 
-#### Sample Wire Frames: 
+![Image-4](https://i.imgur.com/KdDfQLJ.png)
 
-here's a basic login page. if the user hasn't logged in before they can create an account: 
+![Image-5](https://i.imgur.com/SILz9sX.png)
 
-![Image-1](https://i.imgur.com/LYYdxF6.png)
+![Image-6]()
 
-on this page the user can select from various categories of activies. whichever category is selected will render and specific activies will be shown. the user can select activities to add to an activity list rendered on the right of the screen: 
+![Image-7]()
 
-![Image-2](https://i.imgur.com/QBcv3fa.png)
+# 3. Technologies Used: 
+MongoDB (NoSQL), Express.js, React, Node.js, Javascript, CSS
 
-in this screen several activities from different categories have been selected. the user can choose to schedule the activies (they can also remove activities, or add more): 
+# 4. Getting Started with alPal: 
 
-![Image-3](https://i.imgur.com/WnlLJhH.png)
+    Link to Deployed App: https://alpal.onrender.com/
 
-the user has a 'bespoke' category to choose from. in this option, they can add their own activities. since these activities are user generated they have the ability not only to delete the activity, but also to edit the actitity: 
+    Link to Project's Trello Board: https://trello.com/b/CiLCPjMJ/project-4-sei
 
-![Image-4](https://i.imgur.com/fcf4UIc.png)
+    Link to Wireframes: https://balsamiq.cloud/sjh802t/plnwo83/rADA7
 
-this view shows activities from mulitiple categories selected. the user can delete (and with bespoke activities they may edit). when they are ready they can schedule the activities: 
+    Link to ERD: see Trello board.
 
-![Image-5](https://i.imgur.com/uXYUyuG.png)
-
-
-#### ERD: 
-
-![ERD](https://i.imgur.com/a0Ywdyd.png)
+# 5. Next Steps / Ice-Box Items: 
