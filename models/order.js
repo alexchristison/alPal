@@ -20,7 +20,8 @@ const orderSchema = new Schema({
   },
   // orderName: { type: string },
   lineActivities: [lineActivitySchema],
-  isPaid: { type: Boolean, default: false } 
+  isPaid: { type: Boolean, default: false },
+  orderName: String
 }, {
   timestamps: true,
   toJSON: { virtuals: true }

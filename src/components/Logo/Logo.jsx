@@ -1,11 +1,9 @@
-// import './Logo.css';
+import './Logo.css';
 
 export default function Logo() {
   return (
     <div className="Logo">
-        <h1>alPal</h1>
-      <div>al</div>
-      <div>Pal</div>
+        <h2>alPal</h2>
     </div>
   );
 }

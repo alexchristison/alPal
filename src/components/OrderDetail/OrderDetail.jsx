@@ -29,6 +29,8 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
         {lineActivities.length ?
           <>
             {lineActivities}
+            <label>Name Your Order</label>
+          <input type="text" />
             <section className="total">
               {order.isPaid ?
                 <span className="right">TOTAL&nbsp;&nbsp;</span>

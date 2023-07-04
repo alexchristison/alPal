@@ -6,6 +6,7 @@ import AuthPage from '../AuthPage/AuthPage';
 import NewOrderPage from '../NewOrderPage/NewOrderPage';
 import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
 
+
 export default function App() {
   const [user, setUser] = useState(getUser());
 
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="/orders/new" element={<NewOrderPage user={user} setUser={setUser} />} />
           <Route path="/orders" element={<OrderHistoryPage user={user} setUser={setUser} />} />
           <Route path="/*" element={<Navigate to="/orders/new" />} />
+
         </Routes>          
           :
           <AuthPage setUser={setUser} />

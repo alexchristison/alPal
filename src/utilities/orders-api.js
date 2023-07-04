@@ -29,5 +29,5 @@ export function checkout() {
 
 // Fetches all orders for the logged in user
 export function getAllForUser() {
-    return sendRequest(`${BASE_URL}`);
+    return sendRequest(`${BASE_URL}?fields=orderName`);
   }
